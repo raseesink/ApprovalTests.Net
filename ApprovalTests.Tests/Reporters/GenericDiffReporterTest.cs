@@ -39,6 +39,8 @@ namespace ApprovalTests.Tests.Reporters
         [Test]
         public void TestMissingDots()
         {
+			CultureUtilities.ForceCulture();
+
 			using (ApprovalTests.Namers.ApprovalResults.UniqueForOs())
 			{
 				var e =

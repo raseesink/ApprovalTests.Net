@@ -14,6 +14,8 @@ namespace ApprovalTests.Tests.Async
 		[Test]
 		public void TestAsyncExceptionFromVoid()
 		{
+			CultureUtilities.ForceCulture();
+
 			using (ApprovalTests.Namers.ApprovalResults.UniqueForOs ()) {
 				AsyncApprovals.VerifyException (ThrowBabyThrow (),
 					ScrubberUtils.RemoveLinesContaining ("System.Linq.Parallel.QueryTask"));

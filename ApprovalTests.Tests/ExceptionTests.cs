@@ -10,6 +10,8 @@ namespace ApprovalTests.Tests
 		[Test]
 		public void TestVerifyException()
 		{
+			CultureUtilities.ForceCulture();
+
 			using (ApprovalTests.Namers.ApprovalResults.UniqueForOs ()) {
 				Action wrapper = () => { throw new Exception (); };
 				var e = ExceptionUtilities.GetException (wrapper);

@@ -16,6 +16,8 @@ namespace ApprovalUtilities.Tests
 		[TestMethod]
 		public void TestMainPath()
 		{
+			CultureUtilities.ForceCulture();
+
 			var log = Logger.LogToStringBuilder();
 			using (Logger.MarkEntryPoints())
 			{

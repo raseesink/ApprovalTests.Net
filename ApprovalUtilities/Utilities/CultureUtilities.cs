@@ -8,6 +8,7 @@ namespace ApprovalUtilities.Utilities
         public static void ForceCulture(string culture="en-US")
         {
             Thread.CurrentThread.CurrentCulture = new CultureInfo(culture);
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(culture);
         }
     }
 }
