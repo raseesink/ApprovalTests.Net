@@ -35,7 +35,7 @@ namespace ApprovalUtilities.Utilities
 			return GetDirectoryForCaller(1) + relativePath;
 		}
 
-		public static IEnumerable<string> LocateFileFromEnviormentPath(string toFind)
+		public static IEnumerable<string> LocateFileFromEnvironmentPath(string toFind)
 		{
 			var results = new List<string>();
 			if (File.Exists(toFind))
